@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/86c779a83f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yoga Saravanan</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experiences</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          
+          
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+      
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+      
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+      
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am 
+          <span class="about__name">Jayasurya</span>
+          <img src="images/portfolio.jpeg" alt="Profile Photo" class="about__photo" />
+        </h1>
+        <h2 class="about__role"> Friendly Neighborhood Machine Learning Enthusiast  </h2>
+        <p class="about__desc">
+          Hello! I’m Jayasurya Bhaskar, an AI/ML enthusiast with a Master’s in Computer Science from the University of Central Florida and a knack for turning complex data into actionable insights. 
+          Currently, I’m an Engineering intern at Castillo Engineering, where I dive into solving problems analytically and handling complex data.From software development and algorithms, 
+          to my advanced studies in AI, ML, and VR, I’m been on a quest to combine my love for technology with a bit of fun. 
+        </p>
+        <p class ='about__desc'>
+          I’m driven by curiosity and a desire to make sense of the seemingly random. Whether it’s creating predictive models or 
+          exploring new coding challenges, I’m enthusiastic about harnessing data to solve real-world problems. When I’m not obsessed in a project, you can find me on YouTube exploring the latest AI trends, 
+          or dreaming up the next big thing. If you’re looking for someone who’s passionate about data, driven by curiosity, and a bit of a tech nerd, let’s connect!  
+        </p>
+
+        <div class="about__contact center">
+          <a href="./assets/resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/jayasurya23"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jayasurya-b/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+<!-- Experience Section -->
+<section class="experience" id="experience">
+  <h2>EXPERIENCE</h2>
+  <h3> click to see more (what you can't find on my resume!) </h3>
+  <div class="experience__list">
+  <!-- Experience Card 1 -->
+  <div class="experience__item" onclick="openModal('modal1')">
+    <div class="experience__content">
+      <h3 class="experience__job-title"> Engineering Data Intern </h3>
+      <p class="experience__company">Castillo Engineering - Orlando</p>
+      <p class="experience__dates">July 2024 - Present</p>
+    </div>
+  </div>
+
+  <!-- Modal for Experience 1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <p> Working at Castillo Engineering was a rewarding experience that honed my skills in collaboration and creative problem-solving. 
+        I LOVED transforming complex data into actionable insights that directly supported renewable energy initiatives. 
+        One highlight was automating a time-consuming report, earning me a reputation for efficiency and innovation. 
+        This role taught me the value of cross-functional teamwork and sharpened my ability to approach challenges with both structure and creativity. </p>
+    </div>
+  </div>
+
+  <!-- Experience Card 2 -->
+  <div class="experience__item" onclick="openModal('modal2')">
+    <div class="experience__content">
+      <h3 class="experience__job-title">Data Scientist </h3>
+      <p class="experience__company">Genpact - India</p>
+      <p class="experience__dates">Feb 2022 - Aug 2022</p>
+    </div>
+  </div>
+
+  <!-- Modal for Experience 2 -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <p>I worked closely with the R&D team in Genpact to create an advanced dental image classification.
+        This experience introduced me to advanced machine learnig and mathematical skills. 
+        I loved the process of working with a dedicated data science team and I collaborated with some fanstastic data scientists whose guidance I seek till date!
+        I was offered the lucky opportunity to pursue my master's degree in UCF which is why my experince was cut short earlier.
+      </p>
+    </div>
+  </div>
+
+  <div class="experience__item" onclick="openModal('modal3')">
+    <div class="experience__content">
+      <h3 class="experience__job-title">Data Science Intern</h3>
+      <p class="experience__company">Speed Spark</p>
+      <p class="experience__dates">July 2021 - Jan 2021</p>
+    </div>
+  </div>
+
+  <!-- Modal for Experience 3 -->
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <p> This was my first time working at a small company with big data! 
+        I loved having the creative freedom to explore my ideas while collaborating with multiple teams to create a robust employee review system. 
+        The experience taught me to fully lead and execute projects, both with and without guidance, which has shaped my problem-solving skills and 
+        ability to adapt in any environment. It was a rewarding opportunity to see my work make a real impact, and it has been invaluable in my career journey.</p>
+    </div>
+  </div>
+
+  
+  </div>
+  
+</section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Dashboards</h3>
+            <p class="project__description">
+              Take a look at some of the PowerBI dashboards I have built. 
+            </p>
+
+            <a
+              href="https://github.com/genesis1899?tab=repositories&q=topic:dashboard"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+                href="assets/Dashboard 1.mp4"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank" >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+                href="assets/dashboard 2.mp4"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank" >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+                href="assets/Dashboard 3.mp4"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank" >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+                href="assets/Dashboard 4.mp4"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank" >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Machine Learning Projects</h3>
+            <p class="project__description">
+              Here is a collection of all the ML, CV and NLP based models I have built.
+            </p>
+
+            <a
+              href="https://github.com/genesis1899?tab=repositories&q=topic:machine-learning"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+
+          <div class="project">
+            <h3>Data Handling</h3>
+            <p class="project__description">
+              These are collection of projects that show how I handle data visualization, preprocessing, cleaning etc.
+            </p>
+
+            <a
+              href="https://github.com/genesis1899?tab=repositories&q=topic:datahandling"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">PYTHON</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">EXCEL</li>
+          <li class="skills__list-item btn btn--plain">POWERBI</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">DATA VISUALIZATION</li>
+          <li class="skills__list-item btn btn--plain">DATA ANALYSIS</li>
+          <li class="skills__list-item btn btn--plain">COMPUTER VISION</li>
+          <li class="skills__list-item btn btn--plain">MACHINE LEARNING</li>
+          <li class="skills__list-item btn btn--plain">UNITY 3D</li>
+          <li class="skills__list-item btn btn--plain">AI</li>
+          <li class="skills__list-item btn btn--plain">STATISTICAL ANALYSIS</li>
+          <li class="skills__list-item btn btn--plain">DATABRICKS</li>
+          <li class="skills__list-item btn btn--plain">HTML/CSS</li>
+          <li class="skills__list-item btn btn--plain">JAVASCRIPT</li>
+        </ul>
+      </section>
+
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:bjayasurya23@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+        <br>
+        <a href="tel:+16892700723">
+          <span class="btn btn--outline">Call me</span>
+        </a>
+      </section>
+      
+
+    <footer class="footer">
+      <a
+        href="https://github.com/genesis1899/genesis1899.github.io"
+        class="link footer__link"
+      >
+        Link to Portfolio code
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
